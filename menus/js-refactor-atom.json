@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle js-refactor-atom",
-        "command": "js-refactor-atom:toggle"
+        "label": "JS Refactorings: Test Run",
+        "command": "js-refactor-atom:test-run"
       }
     ]
   },
@@ -15,8 +15,8 @@
           "label": "js-refactor-atom",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "js-refactor-atom:toggle"
+              "label": "Test Run",
+              "command": "js-refactor-atom:test-run"
             }
           ]
         }

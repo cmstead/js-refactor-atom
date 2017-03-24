@@ -1,12 +1,12 @@
 {
   "name": "js-refactor-atom",
   "main": "./lib/js-refactor-atom",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A short description of your package",
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "js-refactor-atom:toggle"
+    "atom-workspace": "js-refactor-atom:test-run"
   },
   "repository": "https://github.com/atom/js-refactor-atom",
   "license": "MIT",

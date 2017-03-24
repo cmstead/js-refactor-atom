@@ -1,5 +1,5 @@
 {
   "atom-workspace": {
-    "ctrl-alt-o": "js-refactor-atom:toggle"
+    "ctrl-alt-o": "js-refactor-atom:test-run"
   }
 }
