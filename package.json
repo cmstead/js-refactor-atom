@@ -4,10 +4,6 @@
   "version": "0.1.0",
   "description": "A short description of your package",
   "keywords": [],
-  "activationCommands": {
-    "atom-workspace": "js-refactor-atom:reformat",
-    "atom-workspace": "js-refactor-atom:rename"
-  },
   "repository": "https://github.com/cmstead/js-refactor-atom",
   "license": "MIT",
   "engines": {
