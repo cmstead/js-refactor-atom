@@ -1,5 +1,6 @@
 {
   "atom-workspace": {
-    "ctrl-alt-o": "js-refactor-atom:test-run"
+    "ctrl-shift-t": "js-refactor-atom:reformat",
+    "alt-shift-f2": "js-refactor-atom:rename"
   }
 }

@@ -2,8 +2,17 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "JS Refactorings: Test Run",
-        "command": "js-refactor-atom:test-run"
+        "label": "JS Refactorings",
+        "submenu": [
+          {
+            "label": "Reformat",
+            "command": "js-refactor-atom:reformat"
+          },
+          {
+            "label": "Rename (alt + shift + F2)",
+            "command": "js-refactor-atom:rename"
+          }
+        ]
       }
     ]
   },
@@ -15,8 +24,12 @@
           "label": "js-refactor-atom",
           "submenu": [
             {
-              "label": "Test Run",
-              "command": "js-refactor-atom:test-run"
+              "label": "Reformat",
+              "command": "js-refactor-atom:reformat"
+            },
+            {
+              "label": "Rename  (alt + shift + F2)",
+              "command": "js-refactor-atom:rename"
             }
           ]
         }

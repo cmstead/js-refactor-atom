@@ -3,16 +3,20 @@
   "main": "./lib/js-refactor-atom",
   "version": "0.1.0",
   "description": "A short description of your package",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
-    "atom-workspace": "js-refactor-atom:test-run"
+    "atom-workspace": "js-refactor-atom:reformat",
+    "atom-workspace": "js-refactor-atom:rename"
   },
-  "repository": "https://github.com/atom/js-refactor-atom",
+  "repository": "https://github.com/cmstead/js-refactor-atom",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "dject": "^1.4.0",
+    "esprima": "^3.1.3",
+    "esrefactor": "^0.1.0",
+    "prettier": "^0.22.0"
   }
 }
