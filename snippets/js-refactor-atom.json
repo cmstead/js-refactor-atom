@@ -1,8 +1,68 @@
 {
-  ".source.js": {
-    "function": {
+  ".source.js, .source.ts": {
+    "Function": {
       "prefix": "fn",
-      "body": "function $1 ($2){\n $3\n }"
+      "body": "function $1 ($2){\n $3 \n}"
+    },
+    "Strict Directive": {
+      "prefix": "strict",
+      "body": "'use strict';"
+    },
+    "Member Function": {
+      "prefix": "mfn",
+      "body": "$1: function ($2) {\n $3 \n}"
+    },
+    "Anonymous Function": {
+      "prefix": "anon",
+      "body": "function ($1) {\n $3 \n}"
+    },
+    "Immediately Invoked Function Expression": {
+      "prefix": "iife",
+      "body": "(function () {\n $1 \n})();"
+    },
+    "Export Object Literal": {
+      "prefix": "exportObj",
+      "body": "module.exports = {\n $1 \n};"
+    },
+    "Export Module Value": {
+      "prefix": "export",
+      "body": "module.exports = $1;"
+    },
+    "Require Statement": {
+      "prefix": "require",
+      "body": "var ${1:varName} = require('${2:moduleName}');"
+    },
+    "Prototypal Object": {
+      "prefix": "proto",
+      "body": "function ${1:objName} ($2) {\n $3 \n} \n\n${1:objName}.prototype = {\n $4 \n};"
+    },
+    "Condition Block": {
+        "prefix": "cond",
+        "body": "if ($1) {\n\t$2\n}",
+    },
+    "Console Log": {
+        "prefix": "log",
+        "body": "console.log($1);"
+    },
+    "Lambda Function": {
+        "prefix": "lambda",
+        "body": "$1 => $2"
+    },
+    "Arrow Function": {
+        "prefix": "arrow",
+        "body": "($1) => {\n$2 \n}"
+    },
+    "Generator": {
+        "prefix": "generator",
+        "body": "function *($1) { \n $2 \n}"
+    },
+    "Async Function": {
+        "prefix": "async",
+        "body": "async function ($1) { \n$2 \n}"
+    },
+    "Try/Catch": {
+        "prefix": "tryCatch",
+        "body": "try { \n$1 \n} catch (e) { \n$2 \n}"
     }
   }
 }
