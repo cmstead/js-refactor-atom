@@ -22,11 +22,9 @@ describe('Rename Variable', function () {
     beforeEach(function () {
         subcontainer = container.new();
 
-        mocker.registerMock('logger');
         mocker.registerMock('editActionsFactory');
         mocker.registerMock('dialogFactory');
 
-        subcontainer.register(mocker.getMock('logger').mock);
         subcontainer.register(mocker.getMock('editActionsFactory').mock);
         subcontainer.register(mocker.getMock('dialogFactory').mock);
 
@@ -39,8 +37,6 @@ describe('Rename Variable', function () {
         mocker.getMock('dialogFactory').api.open = function (prompt, callback) {
             callback('quux');
         };
-
-        mocker.getMock('logger').api.log = sinon.spy();
     });
 
     it('should rename selected variable correctly', function () {
