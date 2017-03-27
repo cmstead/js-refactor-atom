@@ -1,0 +1,5 @@
+[
+    [
+        "'use strict';\n\nfunction foo (quux) {\n  console.log(quux);\n}\n"
+    ]
+]

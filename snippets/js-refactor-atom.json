@@ -1,66 +1,70 @@
 {
   ".source.js, .source.ts": {
-    "Function": {
-      "prefix": "fn",
-      "body": "function $1 ($2){\n $3 \n}"
-    },
-    "Strict Directive": {
-      "prefix": "strict",
+    "Function (JS Refactorings)": {
+      "prefix": "rfn",
       "body": "'use strict';"
     },
-    "Member Function": {
+    "Strict Directive (JS Refactorings)": {
+      "prefix": "rstrict",
+      "body": "'use strict';"
+    },
+    "Member Function (JS Refactorings)": {
       "prefix": "mfn",
       "body": "$1: function ($2) {\n $3 \n}"
     },
-    "Anonymous Function": {
-      "prefix": "anon",
-      "body": "function ($1) {\n $3 \n}"
+    "Anonymous Function (JS Refactorings)": {
+      "prefix": "ranon",
+      "body": "function ($1) {\n $2 \n}"
     },
-    "Immediately Invoked Function Expression": {
+    "Immediately Invoked Function Expression (JS Refactorings)": {
       "prefix": "iife",
       "body": "(function () {\n $1 \n})();"
     },
-    "Export Object Literal": {
+    "Export Object Literal (JS Refactorings)": {
       "prefix": "exportObj",
       "body": "module.exports = {\n $1 \n};"
     },
-    "Export Module Value": {
+    "Export Module Value (JS Refactorings)": {
       "prefix": "export",
       "body": "module.exports = $1;"
     },
-    "Require Statement": {
+    "Require Statement (JS Refactorings)": {
       "prefix": "require",
       "body": "var ${1:varName} = require('${2:moduleName}');"
     },
-    "Prototypal Object": {
-      "prefix": "proto",
+    "Prototypal Object (JS Refactorings)": {
+      "prefix": "protoObj",
       "body": "function ${1:objName} ($2) {\n $3 \n} \n\n${1:objName}.prototype = {\n $4 \n};"
     },
-    "Condition Block": {
+    "Condition Block (JS Refactorings)": {
         "prefix": "cond",
-        "body": "if ($1) {\n\t$2\n}",
+        "body": "if ($1) { \n$2 \n}"
     },
-    "Console Log": {
+    "Console Log (JS Refactorings)": {
         "prefix": "log",
         "body": "console.log($1);"
     },
-    "Lambda Function": {
+    "Lambda Function (JS Refactorings)": {
         "prefix": "lambda",
         "body": "$1 => $2"
     },
-    "Arrow Function": {
+    "Arrow Function (JS Refactorings)": {
         "prefix": "arrow",
         "body": "($1) => {\n$2 \n}"
     },
-    "Generator": {
+    "Generator (JS Refactorings)": {
         "prefix": "generator",
         "body": "function *($1) { \n $2 \n}"
     },
-    "Async Function": {
+    "Coroutine (JS Refactorings)": {
+        "prefix": "coroutine",
+        "body": "function *($1) { \n $2 \n}"
+    },
+    "Async Function (JS Refactorings)": {
         "prefix": "async",
         "body": "async function ($1) { \n$2 \n}"
     },
-    "Try/Catch": {
+    "Try/Catch (JS Refactorings)": {
         "prefix": "tryCatch",
         "body": "try { \n$1 \n} catch (e) { \n$2 \n}"
     }
