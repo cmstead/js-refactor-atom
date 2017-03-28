@@ -33,7 +33,7 @@ function editorFactory (sourceLines, range) {
     var endCol = range.end.column;
 
     var lineLength = (endRow - startRow) + 1;
-    var selectedLines = sourceLines.slice(startRow, lineLength);
+    var selectedLines = sourceLines.slice(startRow, startRow + lineLength);
     var endIndex = lineLength > 1 ? endCol : endCol - startCol;
 
     setFirst(selectedLines, first(selectedLines).substr(startCol - 1));
