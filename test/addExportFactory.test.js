@@ -39,7 +39,7 @@ describe('Add Export', function () {
         mocker.getMock('logger').api.log = sinon.spy();
     });
 
-    it.skip('should log an error if function name comes back blank', function () {
+    it('should log an error if function name comes back blank', function () {
         var sourceTokens = readSource('./test/fixtures/addExport/addExport-no-exports.js');
         var range = {
           start: {
@@ -55,70 +55,64 @@ describe('Add Export', function () {
         var applySetEdit = mocker.getMock('editActionsFactory').api.applySetEdit;
 
         var log = mocker.getMock('logger').api.log;
-        subcontainer.build('addExportFactory')(editorFake, function(){})();
+        subcontainer.build('addExportFactory')(editorFake, function(){});
 
         this.verify(prettyJson(log.args));
     });
 
-    it.skip('should add an export to file source when one does not exist', function () {
+    it('should add an export to file source when one does not exist', function () {
         var sourceTokens = readSource('./test/fixtures/addExport/addExport-no-exports.js');
-        var editorFake =  editorFactory();
+        var range = {
+          start: {
+            row: 2,
+            column: 1
+          },
+          end: {
+            row: 5,
+            column: 2
+          }
+        }
+        var editorFake =  editorFactory(sourceTokens, range);
 
-        editorFake.window.activeTextEditor._documentData._lines = sourceTokens;
-        editorFake.window.activeTextEditor._selections = [{
-            _start: {
-                _line: 2,
-                _character: 0
-            },
-            _end: {
-                _line: 5,
-                _character: 1
-            }
-        }];
-
-        subcontainer.build('addExportFactory')(editorFake.window.activeTextEditor, function () { })();
+        subcontainer.build('addExportFactory')(editorFake, function () { });
 
         this.verify(prettyJson(applySetEditSpy.args));
     });
 
-    it.skip('should add a single line export to file sourceif other exports are single line', function () {
+    it('should add a single line export to file sourceif other exports are single line', function () {
         var sourceTokens = readSource('./test/fixtures/addExport/addExport-line-exports.js');
-        var editorFake =  editorFactory();
+        var range = {
+          start: {
+            row: 2,
+            column: 1
+          },
+          end: {
+            row: 5,
+            column: 2
+          }
+        }
+        var editorFake =  editorFactory(sourceTokens, range);
 
-        editorFake.window.activeTextEditor._documentData._lines = sourceTokens;
-        editorFake.window.activeTextEditor._selections = [{
-            _start: {
-                _line: 2,
-                _character: 0
-            },
-            _end: {
-                _line: 5,
-                _character: 1
-            }
-        }];
-
-        subcontainer.build('addExportFactory')(editorFake.window.activeTextEditor, function () { })();
+        subcontainer.build('addExportFactory')(editorFake, function () { });
 
         this.verify(prettyJson(applySetEditSpy.args));
     });
 
-    it.skip('should add an export line to existing exported object', function () {
+    it('should add an export line to existing exported object', function () {
         var sourceTokens = readSource('./test/fixtures/addExport/addExport-object-exports.js');
-        var editorFake =  editorFactory();
+        var range = {
+          start: {
+            row: 2,
+            column: 1
+          },
+          end: {
+            row: 5,
+            column: 2
+          }
+        }
+        var editorFake =  editorFactory(sourceTokens, range);
 
-        editorFake.window.activeTextEditor._documentData._lines = sourceTokens;
-        editorFake.window.activeTextEditor._selections = [{
-            _start: {
-                _line: 2,
-                _character: 0
-            },
-            _end: {
-                _line: 5,
-                _character: 1
-            }
-        }];
-
-        subcontainer.build('addExportFactory')(editorFake.window.activeTextEditor, function () { })();
+        subcontainer.build('addExportFactory')(editorFake, function () { });
 
         this.verify(prettyJson(applySetEditSpy.args));
     });

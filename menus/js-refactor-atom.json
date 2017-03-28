@@ -5,6 +5,10 @@
         "label": "JS Refactorings",
         "submenu": [
           {
+            "label": "Add Export",
+            "command": "js-refactor-atom:addExport"
+          },
+          {
             "label": "Reformat",
             "command": "js-refactor-atom:reformat"
           },
@@ -21,8 +25,12 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "js-refactor-atom",
+          "label": "JS Refactorings",
           "submenu": [
+            {
+              "label": "Add Export",
+              "command": "js-refactor-atom:addExport"
+            },
             {
               "label": "Reformat",
               "command": "js-refactor-atom:reformat"
