@@ -9,7 +9,11 @@
             "command": "js-refactor-atom:addExport"
           },
           {
-            "label": "Reformat",
+            "label": "Convert to Member Function",
+            "command": "js-refactor-atom:convertToMemberFunction"
+          },
+          {
+            "label": "Reformat (ctrl + shift + t)",
             "command": "js-refactor-atom:reformat"
           },
           {
@@ -32,7 +36,11 @@
               "command": "js-refactor-atom:addExport"
             },
             {
-              "label": "Reformat",
+              "label": "Convert to Member Function",
+              "command": "js-refactor-atom:convertToMemberFunction"
+            },
+            {
+              "label": "Reformat (ctrl + shift + t)",
               "command": "js-refactor-atom:reformat"
             },
             {
