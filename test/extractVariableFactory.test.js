@@ -23,28 +23,26 @@ describe('Extract Variable', function () {
 
         mocker.registerMock('logger');
         mocker.registerMock('editActionsFactory');
+        mocker.registerMock('dialogFactory');
 
         subcontainer.register(mocker.getMock('logger').mock);
         subcontainer.register(mocker.getMock('editActionsFactory').mock);
+        subcontainer.register(mocker.getMock('dialogFactory').mock);
 
         applySetEditSpy = sinon.spy();
         applySetEditsSpy = sinon.spy();
 
-        mocker.getMock('editActionsFactory').api.applySetEdit = function (text, coords) {
+        mocker.getMock('editActionsFactory').api.applySetEdit = function (text, coords, callback) {
             applySetEditSpy(text, coords);
+            callback();
+        };
 
-            return {
-                then: function (callback) {
-                    callback()
-                }
-            };
+        mocker.getMock('dialogFactory').api.open = function (prompt, callback) {
+            callback('foo');
         };
 
         mocker.getMock('logger').api.log = sinon.spy();
         mocker.getMock('logger').api.info = sinon.spy();
-        mocker.getMock('logger').api.input = function (astr, callback) {
-            callback('foo');
-        }
     });
 
     it('should log an error if selection is empty', function () {
@@ -93,12 +91,12 @@ describe('Extract Variable', function () {
         var sourceTokens = readSource('./test/fixtures/extractVariable/extractVariable.js');
         var range = {
           start: {
-            row: 6,
-            column: 21
+            row: 11,
+            column: 17
           },
           end: {
-            row: 6,
-            column: 24
+            row: 11,
+            column: 20
           }
         };
         var editorFake = editorFactory(sourceTokens, range);

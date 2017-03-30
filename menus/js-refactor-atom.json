@@ -17,6 +17,10 @@
             "command": "js-refactor-atom:convertToNamedFunction"
           },
           {
+            "label": "Extract Variable",
+            "command": "js-refactor-atom:extractVariable"
+          },
+          {
             "label": "Reformat (ctrl + shift + t)",
             "command": "js-refactor-atom:reformat"
           },
@@ -46,6 +50,10 @@
             {
               "label": "Convert to Named Function",
               "command": "js-refactor-atom:convertToNamedFunction"
+            },
+            {
+              "label": "Extract Variable",
+              "command": "js-refactor-atom:extractVariable"
             },
             {
               "label": "Reformat (ctrl + shift + t)",
