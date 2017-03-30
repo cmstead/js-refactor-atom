@@ -13,6 +13,10 @@
             "command": "js-refactor-atom:convertToMemberFunction"
           },
           {
+            "label": "Convert to Named Function",
+            "command": "js-refactor-atom:convertToNamedFunction"
+          },
+          {
             "label": "Reformat (ctrl + shift + t)",
             "command": "js-refactor-atom:reformat"
           },
@@ -38,6 +42,10 @@
             {
               "label": "Convert to Member Function",
               "command": "js-refactor-atom:convertToMemberFunction"
+            },
+            {
+              "label": "Convert to Named Function",
+              "command": "js-refactor-atom:convertToNamedFunction"
             },
             {
               "label": "Reformat (ctrl + shift + t)",
