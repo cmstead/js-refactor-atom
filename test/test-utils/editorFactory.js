@@ -37,7 +37,7 @@ function editorFactory (sourceLines, range) {
     var endIndex = lineLength > 1 ? endCol : endCol - startCol;
 
     setFirst(selectedLines, first(selectedLines).substr(startCol - 1));
-    setLast(selectedLines, last(selectedLines).substr(0, endIndex - 1));
+    setLast(selectedLines, last(selectedLines).substr(0, endIndex));
 
     return selectedLines.join('\n');
   }

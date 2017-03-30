@@ -1,6 +1,6 @@
 [
     [
-        "foo: function () {\n",
+        "foo: function () {\n ",
         {
             "start": [
                 2,

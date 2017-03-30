@@ -1,6 +1,6 @@
 [
     [
-        "function myBar () {\n",
+        "function myBar () {\n ",
         {
             "start": [
                 8,
