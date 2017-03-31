@@ -39,8 +39,6 @@ function editorFactory (sourceLines, range) {
     setFirst(selectedLines, first(selectedLines).substr(startCol));
     setLast(selectedLines, last(selectedLines).substr(0, endIndex));
 
-    console.log(selectedLines);
-
     return selectedLines.join('\n');
   }
 

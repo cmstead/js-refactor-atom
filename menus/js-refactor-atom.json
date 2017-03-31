@@ -35,6 +35,19 @@
           {
             "label": "Rename (alt + shift + F2)",
             "command": "js-refactor-atom:rename"
+          },
+          {
+            "label": "Shift Parameters",
+            "submenu": [
+              {
+                "label": "Shift Left",
+                "command": "js-refactor-atom:shiftParamsLeft"
+              },
+              {
+                "label": "Shift Right",
+                "command": "js-refactor-atom:shiftParamsRight"
+              }
+            ]
           }
         ]
       }
