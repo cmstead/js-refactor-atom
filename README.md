@@ -1,28 +1,17 @@
-JS-Refactor
-===========
+JS-Refactorings
+===============
 
-JS Refactor is a Visual Studio Code extension for adding a few useful refactorings to help speed development and
+JS Refactorings is a Atom extension for adding several useful refactorings to help speed development and
 reduce the time a Javascript developer has to spend performing repeated actions. It may only take a few extra
 seconds to do these things by hand, but those seconds add up quite quickly.
 
 JS Refactor has two key components: automated refactorings and code snippets.
 
-## Installation
-
-Open VS Code, press F1 and enter `ext install jsrefactor`
-
-For early release access prior to deployment to the Visual Studio Marketplace, this extension can be downloaded
-and side-loaded into your editor.
-
 ## Updates
 
+First release of JS Refactorings for Atom
+
 ## Automated Refactorings
-
-**Basic usage:** Press F1 and type `JS Refactorings` to select from a list of all refactorings
-
-**Alternative options:** You can also press F1 then simply type the name of the refactoring and press enter
-if you know the name of the refactoring you need. Finally, there are hotkey combinations for some of the most common
-refactorings you might want.
 
 JS Refactor supports the following refactorings (explanations below):
 
@@ -130,8 +119,7 @@ tab-stops where you can fill in the information unique to your program.
 ### Contribution Rules and Guidelines
 
 JS Refactorings is open to pull requests for everything from code to documentation.  As with any project, there are certain
-needs which must be addressed.  JS Refactorings is, at its core, still in development. Since it was built on an early version
-of Visual Studio Code, so there is a fair amount of code that was originally exploratory in nature. In its current state,
+needs which must be addressed.  JS Refactorings is, at its core, still in development. In its current state,
 JS Refactorings is fully tested and behaviors are vice-tested into place.  Going forward, code will be cleaned and, itself,
 refactored, so a style guide is going to be relatively fluid.
 
