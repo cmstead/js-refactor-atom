@@ -25,6 +25,10 @@
             "command": "js-refactor-atom:inlineVariable"
           },
           {
+            "label": "Negate Expression",
+            "command": "js-refactor-atom:negateExpression"
+          },
+          {
             "label": "Reformat (ctrl + shift + t)",
             "command": "js-refactor-atom:reformat"
           },
@@ -62,6 +66,10 @@
             {
               "label": "Inline Variable",
               "command": "js-refactor-atom:inlineVariable"
+            },
+            {
+              "label": "Negate Expression",
+              "command": "js-refactor-atom:negateExpression"
             },
             {
               "label": "Reformat (ctrl + shift + t)",
