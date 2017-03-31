@@ -2,7 +2,7 @@
   ".source.js, .source.ts": {
     "Function (JS Refactorings)": {
       "prefix": "rfn",
-      "body": "'use strict';"
+      "body": "function $1 ($2) {\n $3 \n}"
     },
     "Strict Directive (JS Refactorings)": {
       "prefix": "rstrict",
