@@ -21,6 +21,10 @@
             "command": "js-refactor-atom:extractVariable"
           },
           {
+            "label": "Inline Variable",
+            "command": "js-refactor-atom:inlineVariable"
+          },
+          {
             "label": "Reformat (ctrl + shift + t)",
             "command": "js-refactor-atom:reformat"
           },
@@ -54,6 +58,10 @@
             {
               "label": "Extract Variable",
               "command": "js-refactor-atom:extractVariable"
+            },
+            {
+              "label": "Inline Variable",
+              "command": "js-refactor-atom:inlineVariable"
             },
             {
               "label": "Reformat (ctrl + shift + t)",

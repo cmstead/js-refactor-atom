@@ -36,8 +36,10 @@ function editorFactory (sourceLines, range) {
     var selectedLines = sourceLines.slice(startRow, startRow + lineLength);
     var endIndex = lineLength > 1 ? endCol : endCol - startCol;
 
-    setFirst(selectedLines, first(selectedLines).substr(startCol - 1));
+    setFirst(selectedLines, first(selectedLines).substr(startCol));
     setLast(selectedLines, last(selectedLines).substr(0, endIndex));
+
+    console.log(selectedLines);
 
     return selectedLines.join('\n');
   }

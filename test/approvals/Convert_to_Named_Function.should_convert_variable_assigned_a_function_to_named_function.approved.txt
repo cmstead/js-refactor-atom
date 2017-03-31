@@ -1,14 +1,14 @@
 [
     [
-        "function myBar () {\n ",
+        "function myBar () {\n",
         {
             "start": [
                 8,
-                1
+                0
             ],
             "end": [
                 9,
-                1
+                0
             ]
         }
     ]

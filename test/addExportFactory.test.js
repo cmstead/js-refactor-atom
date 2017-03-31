@@ -65,11 +65,11 @@ describe('Add Export', function () {
         var range = {
           start: {
             row: 2,
-            column: 1
+            column: 0
           },
           end: {
             row: 5,
-            column: 2
+            column: 1
           }
         }
         var editorFake =  editorFactory(sourceTokens, range);
@@ -84,11 +84,11 @@ describe('Add Export', function () {
         var range = {
           start: {
             row: 2,
-            column: 1
+            column: 0
           },
           end: {
             row: 5,
-            column: 2
+            column: 1
           }
         }
         var editorFake =  editorFactory(sourceTokens, range);
@@ -103,11 +103,11 @@ describe('Add Export', function () {
         var range = {
           start: {
             row: 2,
-            column: 1
+            column: 0
           },
           end: {
             row: 5,
-            column: 2
+            column: 1
           }
         }
         var editorFake =  editorFactory(sourceTokens, range);

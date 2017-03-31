@@ -84,11 +84,11 @@ describe('Convert to Named Function', function () {
         var range = {
           start: {
             row: 3,
-            column: 1
+            column: 0
           },
           end: {
             row: 4,
-            column: 1
+            column: 0
           }
         };
 
@@ -104,11 +104,11 @@ describe('Convert to Named Function', function () {
         var range = {
           start: {
             row: 8,
-            column: 1
+            column: 0
           },
           end: {
             row: 9,
-            column: 1
+            column: 0
           }
         };
 

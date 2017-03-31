@@ -89,11 +89,11 @@ describe('Convert To Member Function', function () {
         var range = {
           start: {
             row: 2,
-            column: 1
+            column: 0
           },
           end: {
             row: 3,
-            column: 1
+            column: 0
           }
         };
 

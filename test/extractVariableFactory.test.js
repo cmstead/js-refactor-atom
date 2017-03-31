@@ -92,11 +92,11 @@ describe('Extract Variable', function () {
         var range = {
           start: {
             row: 11,
-            column: 17
+            column: 16
           },
           end: {
             row: 11,
-            column: 20
+            column: 19
           }
         };
         var editorFake = editorFactory(sourceTokens, range);
@@ -112,11 +112,11 @@ describe('Extract Variable', function () {
         var range = {
           start: {
             row: 11,
-            column: 22
+            column: 21
           },
           end: {
             row: 11,
-            column: 27
+            column: 26
           }
         };
         var editorFake = editorFactory(sourceTokens, range);

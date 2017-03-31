@@ -78,11 +78,11 @@ describe('Inline Variable', function () {
         var range = {
           start: {
             row: 2,
-            column: 1
+            column: 0
           },
           end: {
             row: 2,
-            column: 19
+            column: 18
           }
         };
         var editorFake = editorFactory(sourceTokens, range);
@@ -99,11 +99,11 @@ describe('Inline Variable', function () {
         var range = {
           start: {
             row: 11,
-            column: 1
+            column: 0
           },
           end: {
             row: 11,
-            column: 13
+            column: 12
           }
         };
         var editorFake = editorFactory(sourceTokens, range);
@@ -120,11 +120,11 @@ describe('Inline Variable', function () {
         var range = {
           start: {
             row: 12,
-            column: 1
+            column: 0
           },
           end: {
             row: 12,
-            column: 22
+            column: 21
           }
         };
         var editorFake = editorFactory(sourceTokens, range);
