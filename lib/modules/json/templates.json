@@ -1,7 +1,7 @@
 {
     "cond": [
         "",
-        "if () {",
+        "if (expression) {",
         "{body}",
         "}",
         ""
@@ -28,13 +28,15 @@
     "arrowFunction": [
         "() => {",
         "{body}",
-        "}"
+        "}",
+        ""
     ],
 
     "generator": [
-        "function {name} *() {",
+        "function* {name} () {",
         "{body}",
-        "}"
+        "}",
+        ""
     ],
 
     "asyncFunction": [
@@ -55,7 +57,8 @@
         "{body}",
         "} catch (e) {",
         "console.log(e.message);",
-        "}"
+        "}",
+        ""
     ],
 
     "addExport": {

@@ -48,6 +48,43 @@
                 "command": "js-refactor-atom:shiftParamsRight"
               }
             ]
+          },
+          {
+            "label": "Wrap Selection",
+            "submenu": [
+              {
+                "label": "in Arrow Function",
+                "command": "js-refactor-atom:wrapInArrowFunction"
+              },
+              {
+                "label": "in Async Function",
+                "command": "js-refactor-atom:wrapInAsyncFunction"
+              },
+              {
+                "label": "in Condition Block",
+                "command": "js-refactor-atom:wrapInCondition"
+              },
+              {
+                "label": "in Executed Function",
+                "command": "js-refactor-atom:wrapInExecutedFunction"
+              },
+              {
+                "label": "in Function",
+                "command": "js-refactor-atom:wrapInFunction"
+              },
+              {
+                "label": "in Generator Function/Coroutine",
+                "command": "js-refactor-atom:wrapInGenerator"
+              },
+              {
+                "label": "in Immediately Invoked Function Expression",
+                "command": "js-refactor-atom:wrapInIIFE"
+              },
+              {
+                "label": "in Try-Catch Block",
+                "command": "js-refactor-atom:wrapInTryCatch"
+              }
+            ]
           }
         ]
       }
@@ -91,6 +128,56 @@
             {
               "label": "Rename  (alt + shift + F2)",
               "command": "js-refactor-atom:rename"
+            },
+            {
+              "label": "Shift Parameters",
+              "submenu": [
+                {
+                  "label": "Shift Left",
+                  "command": "js-refactor-atom:shiftParamsLeft"
+                },
+                {
+                  "label": "Shift Right",
+                  "command": "js-refactor-atom:shiftParamsRight"
+                }
+              ]
+            },
+            {
+              "label": "Wrap Selection",
+              "submenu": [
+                {
+                  "label": "in Arrow Function",
+                  "command": "js-refactor-atom:wrapInArrowFunction"
+                },
+                {
+                  "label": "in Async Function",
+                  "command": "js-refactor-atom:wrapInAsyncFunction"
+                },
+                {
+                  "label": "in Condition Block",
+                  "command": "js-refactor-atom:wrapInCondition"
+                },
+                {
+                  "label": "in Executed Function",
+                  "command": "js-refactor-atom:wrapInExecutedFunction"
+                },
+                {
+                  "label": "in Function",
+                  "command": "js-refactor-atom:wrapInFunction"
+                },
+                {
+                  "label": "in Generator Function/Coroutine",
+                  "command": "js-refactor-atom:wrapInGenerator"
+                },
+                {
+                  "label": "in Immediately Invoked Function Expression",
+                  "command": "js-refactor-atom:wrapInIIFE"
+                },
+                {
+                  "label": "in Try-Catch Block",
+                  "command": "js-refactor-atom:wrapInTryCatch"
+                }
+              ]
             }
           ]
         }

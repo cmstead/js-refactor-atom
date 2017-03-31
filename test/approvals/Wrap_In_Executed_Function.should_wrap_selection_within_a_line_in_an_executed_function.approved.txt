@@ -1,0 +1,15 @@
+[
+    [
+        "\nfunction quux () {\na + b\n}\n\nquux ();\n",
+        {
+            "start": [
+                4,
+                22
+            ],
+            "end": [
+                4,
+                27
+            ]
+        }
+    ]
+]
