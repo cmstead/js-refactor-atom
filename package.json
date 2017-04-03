@@ -2,7 +2,7 @@
   "name": "js-refactor-atom",
   "main": "./lib/js-refactor-atom",
   "version": "0.4.0",
-  "description": "A short description of your package",
+  "description": "Javascript refactoring tools to help simplify the process of improving your code",
   "keywords": [],
   "repository": "https://github.com/cmstead/js-refactor-atom",
   "license": "MIT",
