@@ -1,7 +1,7 @@
 {
   "name": "js-refactor-atom",
   "main": "./lib/js-refactor-atom",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Javascript refactoring tools to help simplify the process of improving your code",
   "keywords": [],
   "repository": "https://github.com/cmstead/js-refactor-atom",
