@@ -5,7 +5,7 @@
   "description": "Javascript refactoring tools to help simplify the process of improving your code",
   "keywords": [],
   "repository": "https://github.com/cmstead/js-refactor-atom",
-  "license": "MIT",
+  "license": "MPL-2.0",
   "scripts": {
     "test": "node ./node_modules/mocha/bin/mocha ./test/*.js"
   },
