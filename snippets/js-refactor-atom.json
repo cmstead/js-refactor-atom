@@ -54,15 +54,15 @@
     },
     "Generator (JS Refactorings)": {
         "prefix": "generator",
-        "body": "function *($1) { \n $2 \n}"
+        "body": "function* $1 ($2) { \n $3 \n}"
     },
     "Coroutine (JS Refactorings)": {
         "prefix": "coroutine",
-        "body": "function *($1) { \n $2 \n}"
+        "body": "function* $1 ($2) { \n $3 \n}"
     },
     "Async Function (JS Refactorings)": {
         "prefix": "async",
-        "body": "async function ($1) { \n$2 \n}"
+        "body": "async function $1 ($2) { \n$3 \n}"
     },
     "Try/Catch (JS Refactorings)": {
         "prefix": "tryCatch",
