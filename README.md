@@ -131,3 +131,9 @@ Nevertheless, following are the required elements of a good pull request:
 - **All tests must continue to pass. Any pull requests with failing tests cannot be accepted.**
 - **Pull request must explain changes which are made, referring to an issue number as available.**
 - **Pull requests may not be claimed as intellectual property of a company or other external agency.**
+
+## Change Log
+
+### 0.7.0
+
+- Enhanced scope finding script to use estraverse for better ES Next syntax
