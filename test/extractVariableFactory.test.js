@@ -107,6 +107,27 @@ describe('Extract Variable', function () {
         this.verify(prettyJson(applySetEditSpy.args));
     });
 
+    it('should extract variable in React source when selection is safe', function () {
+        var sourceTokens = readSource('./test/fixtures/extractVariable/react-source.js');
+        var range = {
+          start: {
+            row: 23,
+            column: 16
+          },
+          end: {
+            row: 23,
+            column: 23
+          }
+        };
+
+        var editorFake = editorFactory(sourceTokens, range);
+        var applySetEdit = mocker.getMock('editActionsFactory').api.applySetEdit;
+
+        subcontainer.build('extractVariableFactory')(editorFake, function () { });
+
+        this.verify(prettyJson(applySetEditSpy.args));
+    });
+
     it('should extract complex variable', function () {
         var sourceTokens = readSource('./test/fixtures/extractVariable/extractVariable.js');
         var range = {
