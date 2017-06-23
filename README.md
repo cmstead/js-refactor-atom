@@ -134,6 +134,10 @@ Nevertheless, following are the required elements of a good pull request:
 
 ## Change Log
 
+### 0.10.0 ###
+
+- Moved to Babylon parser to support JSX, typescript, etc.
+
 ### 0.7.0
 
 - Enhanced scope finding script to use estraverse for better ES Next syntax
