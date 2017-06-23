@@ -59,4 +59,24 @@ describe('Rename Variable', function () {
         this.verify(prettyJson(updateSourceSpy.args));
     });
 
+    it('should rename selected variable in react code correctly', function () {
+        var sourceTokens = readSource('./test/fixtures/rename/react-source.js');
+        var range = {
+          start: {
+            row: 23,
+            column: 14
+          },
+          end: {
+            row: 23,
+            column: 14
+          }
+        };
+
+        var editorFake = editorFactory(sourceTokens, range);
+
+        subcontainer.build('renameFactory')(editorFake);
+
+        this.verify(prettyJson(updateSourceSpy.args));
+    });
+
 });
